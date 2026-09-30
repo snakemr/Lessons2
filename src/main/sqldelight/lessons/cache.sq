@@ -1,0 +1,7 @@
+CREATE TABLE priceCache(
+    uberi_eto_pole TEXT
+);
+
+CREATE TABLE mediaCache(
+    uberi_eto_pole TEXT
+);

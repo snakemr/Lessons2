@@ -23,7 +23,7 @@ fun main() = main { lesson, exit ->
         Control2x5TextButton -> Lesson2x5()
         Control2x6IconButtons -> ComposeSendingMessage { Lesson2x6(it) }
         Control2x7OutlinedIconButton -> Lesson2x7()
-        Control2x8ElevatedIconButton -> Lesson2x8()
+        Control2x8FilledTonalIconButton -> Lesson2x8()
         Control2x9CheckBox -> Lesson2x9()
         Control2x10Switch -> Lesson2x10()
         Control2x11Radio -> Lesson2x11()
@@ -43,7 +43,7 @@ fun main() = main { lesson, exit ->
         Control2x25Chip -> ComposeCallingMessage { Lesson2x25(it) }
         Control2x26Chip -> ComposeFullScreenPaddings { Lesson2x26() }
         Control2x27Chip -> Lesson2x27()
-        Control2x28Chip -> Lesson2x28(userName)
+        Control2x28Chip -> Lesson2x28()
         Control2x29Sliders -> Lesson2x29()
         Control2x30Sliders -> Lesson2x30()
         Control2x31Progress -> Lesson2x31()
@@ -97,7 +97,7 @@ fun main() = main { lesson, exit ->
         Ui4x10Ads -> Lesson4x10()
         Ui4x11DateTime -> Lesson4x11()
         Ui4x12SnackBar -> Lesson4x12(userName)
-        Ui4x13Bar -> ComposeBottomBar({ Lesson4x13() }) { Lesson4x13Content() }
+        Ui4x13Bar -> Lesson4x13()
         Ui4x14Rail -> Lesson4x14(exit)
         Ui4x15Drawer -> Lesson4x15(exit)
         Ui4x16Drawer -> Lesson4x16(exit)
@@ -115,15 +115,20 @@ fun main() = main { lesson, exit ->
         Api5x9Genres -> Lesson5x9(exit)
         Api5x10Search -> Lesson5x10()
         Api5x11Likes -> Lesson5x11()
-        Api5x12Register -> Lesson5x12(takePositions())
-        Api5x13Login -> Lesson5x13(takePositions())
-        Api5x14Inbox -> Lesson5x14(takeAvatars())
-        Api5x15Delete -> Lesson5x15(takeAvatars())
-        Api5x16Send -> Lesson5x16(takeUsersMails())
-        Api5x17Sent -> Lesson5x17(takeAvatars())
-        Api5x18Mail -> Lesson5x18(takeUsersMails())
+        Api5x12GeoIP -> Lesson5x12()
+        Api5x13Register -> Lesson5x13(takePositions())
+        Api5x14Login -> Lesson5x14(takePositions())
+        Api5x15Inbox -> Lesson5x15(takeAvatars())
+        Api5x16Delete -> Lesson5x16(takeAvatars())
+        Api5x17Send -> Lesson5x17(takeUsersMails())
+        Api5x18Sent -> Lesson5x18(takeAvatars())
+        Api5x19Mail -> Lesson5x19(takeUsersMails())
+        Api5x20Posters -> Lesson5x20()
 
-        Data6x1 -> Lesson6x1(database)
+        Data6x1ToDo -> Lesson6x1(database)
+        Data6x2Expenses -> Lesson6x2(database)
+        Data6x3Cache -> Lesson6x3(database)
+        Data6x4Cache -> Lesson6x4(database)
 
         System7x1Adopt -> Lesson7x1()
         System7x2Save -> Lesson7x2(exit)
@@ -133,7 +138,11 @@ fun main() = main { lesson, exit ->
         System7x6Images -> Lesson7x6()
         System7x7Camera -> Lesson7x7()
         System7x8Geo -> Lesson7x8()
+        System7x9Locale -> LocalAppLocale { Lesson7x9(userName, takeRandomCount(), exit) }
 
-        else -> {}
+        Ext8x1Dragging -> Lesson8x1(takeUsers())
+        Ext8x2Join -> Lesson8x2()
+
+        //else -> {}
     }
 }

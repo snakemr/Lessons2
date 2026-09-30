@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "ru.lrmk"
-version = "1.0"
+version = "0.1"
 
 repositories {
     mavenCentral()
@@ -44,6 +44,14 @@ dependencies {
 compose.desktop {
     application {
         mainClass = "MainKt"
+    }
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDirs("src/main/composeResources")
+        }
     }
 }
 

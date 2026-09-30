@@ -1,0 +1,3 @@
+CREATE TABLE expenses (
+    uberi_eto_pole TEXT
+);
