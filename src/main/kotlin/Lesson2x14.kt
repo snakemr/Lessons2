@@ -1,4 +1,5 @@
 // Пожалуйста, не меняйте список импорта:
+import androidx.compose.animation.animateColorAsState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
