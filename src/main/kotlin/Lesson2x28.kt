@@ -10,6 +10,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
+private const val ALL = "♾️ Все"
+private const val IMAGES = "🖼️ Картинки"
+private const val FRUITS = "🍎 Фрукты"
 
 @Composable
 fun Lesson2x28() {
