@@ -9,6 +9,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 
+private const val DOGS = "🐶 Собаки"
+private const val FRUITS = "🍎 Фрукты"
 
 @Composable
 fun Lesson2x27() {
